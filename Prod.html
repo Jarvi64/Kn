@@ -1,40 +1,135 @@
 <!DOCTYPE html>
 <html><head>
 <meta charset="utf-8"/>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<title>Stitch Design</title>
+<title>Mission Control Dashboard</title>
 <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <style type="text/tailwindcss">
-        :root {
-            --primary-color: #f9f506;
-        }
-    </style>
+    :root {
+      --primary-color: #f9f506;
+      --primary-bg: #F3F4F6;
+      --card-bg: #FFFFFF;
+      --text-primary: #1F2937;
+      --text-secondary: #6B7280;
+      --accent-color: #FACC15;
+    }
+    body {
+      font-family: 'Spline Sans', sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-900" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<body class="bg-gray-50 text-gray-900">
 <div class="flex min-h-screen">
-<aside class="w-64 bg-white border-r border-gray-200 flex flex-col">
-<div class="flex items-center gap-3 px-6 py-4 border-b border-gray-200">
-<div class="size-8 text-[var(--primary-color)]">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+<aside class="w-20 lg:w-64 bg-white border-r border-gray-200 flex flex-col p-4">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-3xl text-[var(--accent-color)]">
+            insights
+            </span>
+<h1 class="text-xl font-bold text-gray-800 hidden lg:block">Mission Control</h1>
 </div>
-<h1 class="text-xl font-bold tracking-tight">Mission Control</h1>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 text-gray-800 font-medium" href="#">
+<span class="material-symbols-outlined">factory</span>
+<span class="hidden lg:inline">Production</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">timeline</span>
+<span class="hidden lg:inline">Plan Vs Actual</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">desktop_windows</span>
+<span class="hidden lg:inline">MES</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">compare_arrows</span>
+<span class="hidden lg:inline">PIV (SAP Vs MES)</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">fact_check</span>
+<span class="hidden lg:inline">Quality Management</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">build</span>
+<span class="hidden lg:inline">Plant Maintenance</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">health_and_safety</span>
+<span class="hidden lg:inline">EHS</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">request_quote</span>
+<span class="hidden lg:inline">SCM (PR to PO)</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">security</span>
+<span class="hidden lg:inline">Phy Security</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">eco</span>
+<span class="hidden lg:inline">Plant Utility</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">local_shipping</span>
+<span class="hidden lg:inline">Sales Order Status</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="hidden lg:inline">Daywise Delivery</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="hidden lg:inline">Visitor Management</span>
+</a>
+</nav>
+</aside>
+<main class="flex-1 p-8 bg-gray-50">
+<header class="mb-8">
+<h1 class="text-4xl font-bold text-gray-800">Production Overview</h1>
+<p class="text-gray-500 mt-1">Real-time insights into your production line.</p>
+</header>
+<section class="mb-12">
+<h2 class="text-2xl font-semibold text-gray-700 mb-4">Key Metrics by Location</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+<div class="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Location A</h3>
+<p class="text-4xl font-bold text-green-500 mt-2">85%</p>
+<p class="text-sm text-gray-500">Overall Equipment Effectiveness</p>
 </div>
-<nav class="flex-1 px-4 py-6 space-y-2">
-<a class="flex items-center gap-3 px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100" href="#">
-<span class="material-symbols-outlined">bar_chart</span>
-                    Overview
-                </a>
-<a class="flex items-center gap-3 px-4 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg" href="#">
-<span class="material-symbols-outlined">precision_manufacturing</span>
-                    Production
-                </a>
-<a class="flex items-center gap-3 px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100" href="#">
-<span class="material-symbols-outlined">verified</span>
-                    Quality
-                </a>
+<div class="h-40 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvkNYc2_KaWW9xerft__tZ3ohW9JVq8zJVmfuuT3RmCmI9D1XpWILm0QA2qsd8y612S8cBwd5qOkU1kPmhfG9-vkqoyqGf3Pgf0hFSNb6bcgeNRyg_SldGDnzxSvv9fc8cCZIuIgz_VeaPtrBRBTObsX5VaJ7wFanQ9qdfKn4q4CiIOdwrXQM5jPoBL6Gq8tNSz_bhkQGW0dUggU3K0o-tjVaP1hdjOLMZum1tbk8GI6ewqXwM93pRGWsFG2iRC3GEk3yBBRCjbo_f");'></div>
+</div>
+<div class="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Location B</h3>
+<p class="text-4xl font-bold text-yellow-500 mt-2">78%</p>
+<p class="text-sm text-gray-500">Overall Equipment Effectiveness</p>
+</div>
+<div class="h-40 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBBjvzUQVSLnac_Gcw0Oh3C6CmIrwuOIoWv-C-akG1OMDIVY-LeJs5dyLJhevfbjHhOzaWs4MvNSAyC4WhHxuUcns3_CUnop0u1enwNvvn8xPG-6-9ENtiNEcT0jozk3vJf83wxarqj6OH_w_cts0XPnq_ekJv5Y9TtQ6GQSaeEgnI10esuHXuRS0z3vjb0jK1NfYl21T8STdxX4CuB2UHOjFs-9YjFQ6d3HJGMX3Enumcmj-7N9rl4Kh4vD8QO_nApmqVDIhh-I_eM");'></div>
+</div>
+<div class="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Location C</h3>
+<p class="text-4xl font-bold text-green-600 mt-2">92%</p>
+<p class="text-sm text-gray-500">Overall Equipment Effectiveness</p>
+</div>
+<div class="h-40 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhg1PgzthtdPQNfGxFGi07jNo-WKnzoFEmra4vDuHlvp4RFV6YvQjluicTs1ifB4EMTer9LRaEfqddlyLD_ubzUabnlsvjeoKp9Su3zOtZ5fM3K-mKZ7gyetSo9kfan7_QUgvB4eHVJLcqq0-5sFvr368UiXV_UJJHjcAKbbvK93CEjOPVAoEBq3OFpKCa1-O0_oTBL3q0kl4oOTRdEtVtYyrtKgTEsYvyxOvTNfNlGmyqM4jtiSi7ka4WeG-FPKMYI5lnYBbVoNr-");'></div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-2xl font-semibold text-gray-700 mb-4">Interactive Map</h2>
+<div class="bg-white rounded-2xl shadow-sm p-2">
+<div class="w-full h-[500px] bg-cover bg-center rounded-xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBd3FiZpTsRAwKRmVOx938KECSuEVwJuf58upJVkyd4AJMknGuyoBgKe7IguKchhsIObGCIwTy-0xudGi6pYBwwZh6PWJ0EYYtvrbkhKsJInAyr69V0oA64ktvUdudA1egVuxelHePoyoQEnoJYtmtpG7_DK3ZyMqvoqF3BWWKuQS0FUoA8xh0ovp07ETXQHxyeNJFDwgnJPAEnA2s_PektV2d_R6n-Lelj47etSwEKfoFjjzeB-myMDdpGPDHNnxf32_aWgx1BGj4j");'></div>
+</div>
+</section>
+</main>
+</div>
+
+</body></html>                </a>
 <a class="flex items-center gap-3 px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100" href="#">
 <span class="material-symbols-outlined">build</span>
                     Maintenance
