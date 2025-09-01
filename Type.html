@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-50: #fefde7;
+        --primary-100: #fdfacc;
+        --primary-200: #fcf6a0;
+        --primary-300: #fbf173;
+        --primary-400: #f9ec47;
+        --primary-500: #f9f506;
+        --primary-600: #e0d905;
+        --primary-700: #b4ae04;
+        --primary-800: #878303;
+        --primary-900: #5b5802;
+        --primary-950: #424002;
+      }
+    </style>
+</head>
+<body class="bg-gray-50">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 px-10 py-3 bg-white">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-gray-800">
+<svg class="h-8 w-8 text-[var(--primary-500)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clipPath>
+</defs>
+</svg>
+<h2 class="text-gray-900 text-lg font-bold leading-tight tracking-[-0.015em]">Factory OS</h2>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-gray-600 hover:text-gray-900 text-sm font-medium leading-normal" href="#">Dashboard</a>
+<a class="text-gray-900 text-sm font-bold leading-normal relative" href="#">Production
+                <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-[var(--primary-500)]"></span>
+</a>
+<a class="text-gray-600 hover:text-gray-900 text-sm font-medium leading-normal" href="#">Inventory</a>
+<a class="text-gray-600 hover:text-gray-900 text-sm font-medium leading-normal" href="#">Quality</a>
+<a class="text-gray-600 hover:text-gray-900 text-sm font-medium leading-normal" href="#">Maintenance</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-4">
+<label class="relative flex w-full max-w-xs items-center">
+<span class="material-symbols-outlined absolute left-3 text-gray-500">search</span>
+<input class="form-input w-full rounded-full border-gray-300 bg-white pl-10 text-sm text-gray-800 placeholder:text-gray-500 focus:border-[var(--primary-500)] focus:ring-[var(--primary-500)]" placeholder="Search" value=""/>
+</label>
+<button class="flex size-10 cursor-pointer items-center justify-center rounded-full bg-white text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFl25ObfgUYhHdInSh8psGDS3bW-6Y5gp_8tUR9j6cTWafLR4zyIHXpVbK0xfwiEVEiGNOqzf7Wce9Kv8GJg6ioLwOCYaYWccaNBf19KhQndo5pLOHGkT5YLXPyFSJ3tHZczchGzVwHe_9PiKOCacJVPXF0vB7Ar3WL3ltyxv_5U-7fZjgQHmr5XLCsVF5enfN24xv6ZHpPskDBFpTn5zXTIWkmqHrBTU-QTwPczqOP8kSXX5pLcl4rOobov_zQUlheWCTqrfqpvQs");'></div>
+</div>
+</header>
+<main class="flex-1 px-10 py-8">
+<div class="mx-auto max-w-7xl">
+<div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
+<a class="hover:text-gray-700" href="#">Home</a>
+<span class="material-symbols-outlined text-base">chevron_right</span>
+<a class="hover:text-gray-700" href="#">Production</a>
+<span class="material-symbols-outlined text-base">chevron_right</span>
+<a class="hover:text-gray-700" href="#">Location B</a>
+<span class="material-symbols-outlined text-base">chevron_right</span>
+<span class="text-gray-800 font-medium">Plant 2</span>
+</div>
+<h1 class="text-gray-900 text-4xl font-bold tracking-tight mb-8">Plant 2 Dashboard</h1>
+<section>
+<h2 class="text-gray-900 text-xl font-bold leading-tight tracking-tight mb-4">Key Metrics</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-2 rounded-2xl p-6 bg-white border border-gray-200 shadow-sm">
+<p class="text-gray-600 text-base font-medium leading-normal">Overall Equipment Effectiveness (OEE)</p>
+<p class="text-gray-900 text-4xl font-bold tracking-tight">85%</p>
+</div>
+<div class="flex flex-col gap-2 rounded-2xl p-6 bg-white border border-gray-200 shadow-sm">
+<p class="text-gray-600 text-base font-medium leading-normal">Units Produced</p>
+<p class="text-gray-900 text-4xl font-bold tracking-tight">12,500</p>
+</div>
+<div class="flex flex-col gap-2 rounded-2xl p-6 bg-white border border-gray-200 shadow-sm">
+<p class="text-gray-600 text-base font-medium leading-normal">Defect Rate</p>
+<p class="text-gray-900 text-4xl font-bold tracking-tight">2.5%</p>
+</div>
+</div>
+</section>
+<section class="mt-10">
+<h2 class="text-gray-900 text-xl font-bold leading-tight tracking-tight mb-4">Product Variant Performance</h2>
+<div class="overflow-x-auto rounded-2xl border border-gray-200 bg-white shadow-sm">
+<table class="w-full text-left">
+<thead class="bg-gray-50">
+<tr>
+<th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-gray-600">Product Variant</th>
+<th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-gray-600">Units Produced</th>
+<th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-gray-600">Defect Rate</th>
+<th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-gray-600">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-200">
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Variant A</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">5,000</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">1.8%</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<span class="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-800">
+<span class="w-2 h-2 mr-2 bg-green-500 rounded-full"></span>
+                          Active
+                        </span>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Variant B</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">3,500</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">2.2%</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<span class="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-800">
+<span class="w-2 h-2 mr-2 bg-green-500 rounded-full"></span>
+                          Active
+                        </span>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Variant C</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">2,000</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">3.1%</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<span class="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-800">
+<span class="w-2 h-2 mr-2 bg-green-500 rounded-full"></span>
+                          Active
+                        </span>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Variant D</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">1,500</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">2.8%</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<span class="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-800">
+<span class="w-2 h-2 mr-2 bg-green-500 rounded-full"></span>
+                          Active
+                        </span>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Variant E</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">500</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">4.5%</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-sm font-medium text-gray-800">
+<span class="w-2 h-2 mr-2 bg-gray-500 rounded-full"></span>
+                          Inactive
+                        </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
